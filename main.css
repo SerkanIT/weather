@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #7b4397 0%, #dc2430 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.weather-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.weather-container:hover {
+    transform: translateY(-5px);
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+input:focus {
+    border-color: #ffeb3b;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 64, 129, 0.5);
+}
+
+button:hover {
+    background-color: #e91e63;
+    box-shadow: 0 6px 20px rgba(255, 64, 129, 0.7);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.weather-icon {
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+.weather-info {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.weather-description {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+.weather-detail {
+    display: flex;
+    align-items: center;
+}
+.weather-detail img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+/* Message box styling */
+#error-message, .info-message {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .info-message {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+  }
+  
+
